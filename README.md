@@ -1,6 +1,5 @@
-![CF](https://i.imgur.com/7v5ASc8.png)  Lab 03: jQuery and events
+Lab 03: jQuery and events
 =======
-[Code of Conduct](https://github.com/codefellows/code-of-conduct)
 
 ## Submission Instructions
 When you are finished with lab, follow these steps to submit your work. Create one Pull Request (aka: "PR") from your Forked repo to the CF repo with your changes, and you'll each submit that same PR link in Canvas.
@@ -16,13 +15,11 @@ When you are finished with lab, follow these steps to submit your work. Create o
 ---
 
 ## Learning Objectives
-* Execute event bindings with jQuery’s `.on()` method.
-* Comprehend when event delegation is appropriate.
-* Be able to configure event bindings using delegation.
-* Familiarity with `data-<attributes>` & string concatenation.
-* Build dynamic jQuery selector strings.
-* Use of `$(document).ready()`
-* Integration of icon fonts through the use of IcoMoon.
+* Create event listeners using jQuery's `$.on()`
+* Distinguish when to use event delegation.
+* Select and target HTML elements using the `data` attribute.
+* Run our scripts when the DOM is ready using `$(document).ready()`
+  
 
 ---
 
