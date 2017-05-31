@@ -15,7 +15,7 @@ articleView.populateFilters = function() {
       authorName = $(this).attr('data-author');
       optionTag = '<option value="' + authorName + '">' + authorName + '</option>';
       
-      
+
       if ($('#author-filter option[value="' + authorName + '"]').length === 0) {
         $('#author-filter').append(optionTag);
       }
@@ -37,15 +37,33 @@ articleView.handleAuthorFilter = function() {
     // REVIEW: Inside this function, "this" is the element that triggered the event handler function we're
     //         defining. "$(this)" is using jQuery to select that element, so we can chain jQuery methods
     //         onto it.
+  
+
     if ($(this).val()) {
       // TODO: If the select box was changed to an option that has a value, we need to hide all the articles,
+      
       //       and then show just the ones that match for the author that was selected.
       //       Use an "attribute selector" to find those articles, and fade them in for the reader.
+      var filterVal = $(this).val();
+      $('article').each(function(index) {
+        var standOut = $('article').eq(index).attr('data-author');
+        console.log(standOut);
+        $('article').eq(index).hide();
+        // console.log($(this).val());
+        console.log(filterVal);
+
+        if (filterVal === standOut) {
+          $('article').eq(index).show();
+         //end of if block 
+        }
+
+      });
 
 
     } else {
       // TODO: If the select box was changed to an option that is blank, we should
       //       show all the articles, except the one article we are using as a template.
+      $('data-author').show();
 
     }
     $('#category-filter').val('');
