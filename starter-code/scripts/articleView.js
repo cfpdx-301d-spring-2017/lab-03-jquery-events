@@ -103,9 +103,18 @@ articleView.setTeasers = function () {
 
   $('.read-on').on('click', function () {
     event.preventDefault();
-    $(this).hide();
+    $(this).toggleClass('hidden');
+    $(this).parent().find($('.show-less')).toggleClass('hidden');
+    $(this).parent().find($('.article-body *:nth-of-type(n+2)')).fadeIn(500);
 
-  })
+  });
+  $('.show-less').on('click', function () {
+    event.preventDefault();
+    $(this).toggleClass('hidden');
+    $(this).parent().find($('.read-on')).toggleClass('hidden');
+    $(this).parent().find($('.article-body *:nth-of-type(n+2)')).hide();
+
+  });
   // STRETCH GOAl!: change the 'Read On' link to 'Show Less'
 
 };
