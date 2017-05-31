@@ -4,7 +4,8 @@
 #### Reflect and summarize on your process for each `TODO` item :  
   1. First, we started on linking articleView.js to index.html.
   2. Next, we modified article.js to set the data-author attribute on each article tag.
-  3. 
+  3. Next, we added the category filter methods on each article and made sure the author method was cleared if a category was selected. 
+  4. We finished the handleMainNav function so that when you click on a specific tab, all others will hide and the appropriate tab's content will be on the page.
 
 #### Checklist (before submitting, fill in each set of square brackets with an 'x')
 - [] We have titled the Pull Request similar to our branch name (ex: 'brian-rick'). 
