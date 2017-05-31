@@ -48,6 +48,7 @@ articleView.handleAuthorFilter = function () {
       // TODO: If the select box was changed to an option that is blank, we should
       //       show all the articles, except the one article we are using as a template.
       $('article').show();
+      $('.template').hide();
     }
     $('#category-filter').val('');
   });
@@ -84,14 +85,16 @@ articleView.handleMainNav = function () {
     console.log(section);
     $(section).show();
 
-// Commented out the line below as it is no longer needed and causes an infinite loop
-// $('.main-nav .tab:first').click(); // Let's now trigger a click on the first .tab element, to set up the page.
+    // Commented out the line below as it is no longer needed and causes an infinite loop
+    // $('.main-nav .tab:first').click(); // Let's now trigger a click on the first .tab element, to set up the page.
   })
 }
 
 articleView.setTeasers = function () {
   $('.article-body *:nth-of-type(n+2)').hide(); // Hide elements beyond the first 2 in any article body.
-
+  $('article').on('click', 'a', function () {
+    $(this).parent().children('.article-body').contents().show();
+  });
   // TODO: Add an event handler to reveal all the hidden elements,
   //       when the .read-on link is clicked. You can go ahead and hide the
   //       "Read On" link once it has been clicked. Be sure to prevent the default link-click action!
@@ -109,4 +112,5 @@ $(document).ready(function () {
   articleView.handleAuthorFilter();
   articleView.handleCategoryFilter();
   articleView.handleMainNav();
+  articleView.setTeasers();
 })
