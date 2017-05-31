@@ -108,6 +108,7 @@ articleView.setTeasers = function () {
     $(this).parent().find($('.article-body *:nth-of-type(n+2)')).fadeIn(500);
 
   });
+  // STRETCH GOAl!: change the 'Read On' link to 'Show Less'
   $('.show-less').on('click', function () {
     event.preventDefault();
     $(this).toggleClass('hidden');
@@ -115,7 +116,6 @@ articleView.setTeasers = function () {
     $(this).parent().find($('.article-body *:nth-of-type(n+2)')).hide();
 
   });
-  // STRETCH GOAl!: change the 'Read On' link to 'Show Less'
 
 };
 
@@ -126,6 +126,4 @@ $(document).ready(function () {
   articleView.handleCategoryFilter();
   articleView.handleMainNav();
   articleView.setTeasers();
-
-
 })
