@@ -2,8 +2,8 @@
 **Today, _ and _ paired together. It took about _**
 
 #### Reflect and summarize on your process for each `TODO` item :  
-  1. First, we started on ...
-  2. Next, we ...
+  1. First, we started on linking articleView.js to index.html.
+  2. Next, we modified article.js to set the data-author attribute on each article tag.
   3. 
 
 #### Checklist (before submitting, fill in each set of square brackets with an 'x')
