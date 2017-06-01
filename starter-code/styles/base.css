@@ -31,8 +31,11 @@ a, a:link, a:active {
 }
 
 a:hover, a:focus {
-  color: #29506D;
+  text-decoration: none;
+  color: #637;
 }
 
 a:visited {
+  text-decoration: none;
+  color: #637;
 }
