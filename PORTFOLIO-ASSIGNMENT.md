@@ -22,3 +22,4 @@ Adapt these stories as necessary to fit how you want to build your portfolio.
   - Add click handlers to at leat one nav section.
   - Do as much work as you can with advanced selectors, rather than littering your markup with classes and ids.
   - When classes and IDs are needed, pick semantic names. There is to be no `$('#content .content')` nonsense!
+  - Include an `.eslintrc` file and make sure you pass.  [Here's one](https://gist.github.com/sajoy/05ede1c681bfa59d1295f55290c7a795) you can use as an example; feel free to add or remove rules as you'd like.
