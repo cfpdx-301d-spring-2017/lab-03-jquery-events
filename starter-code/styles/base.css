@@ -27,12 +27,12 @@ address {
 
 a, a:link, a:active {
   text-decoration: none;
-  color: #777;
+  color: tomato;
 }
 
 a:hover, a:focus {
   text-decoration: none;
-  color: #637;
+  color: #777;
 }
 
 a:visited {
