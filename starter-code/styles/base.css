@@ -12,6 +12,14 @@ hr {
   width: 80%;
 }
 
+main, footer {
+  padding: 2em;
+}
+
+#about {
+  display:none;
+}
+
 /*TEXT STYLES
 =======================================*/
 p {
@@ -35,4 +43,12 @@ a:hover, a:focus {
 }
 
 a:visited {
+}
+
+main a {
+  color: #ee6c4d;
+}
+
+main a:hover, main a:focus {
+  color: #3d5a80;
 }
